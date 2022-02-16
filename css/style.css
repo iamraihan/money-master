@@ -1,8 +1,16 @@
 h1{
     color: #31A5AC
 }
+header img{
+    width: 3rem;
+}
+.right-side{
+    background-color: #F8F8F8;
+}
 .input-field{
-
+    background-color: #DCDCDC;
+    border: 0;
+    border-radius: 2px;
 }
 label{
     width: 5rem;
