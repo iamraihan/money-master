@@ -1,0 +1,20 @@
+h1{
+    color: #31A5AC
+}
+.input-field{
+
+}
+label{
+    width: 5rem;
+}
+.primary-button{
+    padding: 10px 30px;
+    background-color: #59A5FF;
+    border-radius: 18px;
+    outline: none;
+    border: 0;
+    color: #fff;
+}
+#save-input{
+    width: 6rem;
+}
