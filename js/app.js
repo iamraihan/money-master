@@ -55,19 +55,23 @@ document.getElementById('save-button').addEventListener('click', function () {
     let remainBalance = document.getElementById('remaining-balance')
 
     if (isNaN(saveInput.value) || saveInput.value < 0) {
-        expenses = ''
+
         return alert('input a valid number')
     }
-    if (saveAmount.innerText > remainBalance.innerText) {
-        return alert('cant save more then Remain Balance')
-    }
+
 
     saveAmount.innerText = incomeInput.value * saveInput.value / 100
 
 
     remainBalance.innerText = balance.innerText - saveAmount.innerText
 
-
+    if (saveAmount.innerText > remainBalance.innerText) {
+        saveInput.value = ''
+        remainBalance.innerText = 0
+        saveAmount.innerText = 0
+        return alert('cant save more then Remain Balance')
+    }
+    saveInput.value = ''
 
 })
 
